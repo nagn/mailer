@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140819173930) do
+ActiveRecord::Schema.define(version: 20140819200030) do
 
   create_table "reports", force: true do |t|
     t.datetime "created_at"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140819173930) do
     t.string   "label"
     t.text     "description"
     t.integer  "tag_type"
+    t.string   "yale_email"
   end
 
 end

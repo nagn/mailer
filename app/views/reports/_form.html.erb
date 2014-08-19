@@ -20,6 +20,12 @@
     <%= f.label :tag_type%>
     <%= f.select :tag_type, options_for_select(Report.tag_types.keys.to_a, @report.tag_type)%>
   </div>
+  <div class = "email_label">
+    <%= f.label "If you would like to be contacted by cluster support, leave your email below (optional):" %>
+  </div>
+  <div class = "email_textfield">
+    <%= f.text_field :yale_email%>
+  </div>
   <div class = "description_label">
     <%= f.label "Please enter a brief description of the issue or any error codes (optional):" %>
   </div>
@@ -29,7 +35,7 @@
   
   <div class="actions">
     <div class = "submit">
-      <%= f.submit "Submit Report" %>
+      <%= f.submit "Submit Report", disable_with: "Sending Report..." %>
     </div>
   </div>
 <% end %>
