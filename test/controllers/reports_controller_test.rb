@@ -18,7 +18,12 @@ class ReportsControllerTest < ActionController::TestCase
 
   test "should create report" do
     assert_difference('Report.count') do
-      post :create, report: {  }
+      post :create, report: {
+      :tag_type => "station",
+      :description => "test description",
+      :label => "STC-TEST_LABEL",
+      :yale_email => "test@example.com",
+      }
     end
 
     assert_redirected_to report_path(assigns(:report))
@@ -35,7 +40,12 @@ class ReportsControllerTest < ActionController::TestCase
   end
 
   test "should update report" do
-    patch :update, id: @report, report: {  }
+    patch :update, id: @report, report: {
+      :tag_type => "station",
+      :description => "test description",
+      :label => "STC-TEST_LABEL",
+      :yale_email => "test@example.com",
+    }
     assert_redirected_to report_path(assigns(:report))
   end
 

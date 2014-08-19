@@ -5,11 +5,21 @@
   </head>
   <body>
     <p>
-      You have successfully signed up to example.com,
+      A QR code has been scanned for the following label STC-TEST_LABEL.
     </p>
     <p>
-      To login to the site, just follow this link: http://example.com/login.
+      This QR code is a station label.
     </p>
-    <p>Thanks for joining and have a great day!</p>
+    <p>
+      The user provided the following description of the incident:
+      test description 
+    </p>
+    <p>
+      The user left the following email to be contacted back:
+      test@example.com 
+    </p>
+    <p>
+      This Email has been automatically generated through mailer.
+    </p>
   </body>
 </html>

@@ -13,15 +13,15 @@
     <p>
     <% if @report.description.length > 0%>
       The user provided the following description of the incident:
-      <%= @report.description %> 
+      <%=@report.description%> 
     <% else %>
       The user did not leave a description of the incident.
     <% end %>
     </p>
     <p>
       <% if @report.yale_email.length > 0%>
-        The user left the following email to be contacted back:
-        <%= @report.yale_email %> 
+      The user left the following email to be contacted back:
+      <%= @report.yale_email%> 
       <% else %>
         The user did not leave their email.
       <% end %>
