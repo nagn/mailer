@@ -4,7 +4,7 @@ class UserMailer < ActionMailer::Base
     @label = report.label
     @tag_type = report.tag_type
     @description = report.description
-    @cluster_email = 'mlin4589@gmail.com'
+    @cluster_email = 'cluster.support@yale.edu'
     mail(to: @cluster_email, subject: "QR Service: Student Scanned QR Code for #{@label}")
   end
 end

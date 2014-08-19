@@ -14,15 +14,14 @@
   
   <div class = "label">
     <%= f.label :label%>
-    <%= f.text_field :label, :value => params[:label]%>
+    <%= f.text_field :label%>
   </div>
-  <div class = "tag_type">
+  <div class = "tag_type" style = "display:none">
     <%= f.label :tag_type%>
-    <%= f.select :tag_type, options_for_select(Report.tag_types.keys.to_a, params[:tag_type])%>
+    <%= f.select :tag_type, options_for_select(Report.tag_types.keys.to_a, @report.tag_type)%>
   </div>
   <div class = "description_label">
-    <%= f.label :description%>
-    
+    <%= f.label "Please enter a brief description of the issue or any error codes (optional):" %>
   </div>
   <div class = "description_textarea">
     <%= f.text_area :description%>
@@ -30,7 +29,7 @@
   
   <div class="actions">
     <div class = "submit">
-      <%= f.submit %>
+      <%= f.submit "Submit Report" %>
     </div>
   </div>
 <% end %>

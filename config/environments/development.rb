@@ -13,7 +13,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  #use gmail to send an email
+  # Don't print errors if the mail fails to send
   config.action_mailer.raise_delivery_errors = false
 
   
